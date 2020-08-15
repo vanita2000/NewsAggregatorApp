@@ -43,4 +43,4 @@ for h,l in zip(h_headings,h_links):
 #print(h_obj)
 
 def pract(request):
-    return render(request,'prac_app/pract.html',{'toi_news':toi_obj,'ht_news':h_obj})
+    return render(request,'prac_app/pract.html',{'toi_news':toi_obj,'h_news':h_obj})
