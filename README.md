@@ -45,7 +45,9 @@ Django Version3.0.8
 4.	Navigate to the manage.py file then run the run the development serveron cmd
     python manage.py runserver
     
-5.	The site will be available at 127.0.0.1:8000.
+5. 	Resolve image location in prac_app/templates/prac_app/pract.html file to display them.
+    
+6.	The site will be available at 127.0.0.1:8000.
 Please consider that a live web-scraping process is carried out every time you run the app, so there may be some crashes due to the failing status of some requests.
 
 References:
