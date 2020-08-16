@@ -1,0 +1,80 @@
+<html>
+<head>
+    <title>NewsApp</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="/path/to/bootstrap.min.css" rel="stylesheet">
+    <link href="/path/to/buttons.css" rel="stylesheet">
+    <style>
+        body{
+        background-image:url("C://Users/HP LAPTOP/Desktop/bg2.jpg");
+        background-size:cover;
+        background-repeat:no-repeat;
+        background-position:center;
+        }
+    </style>
+    <style>
+        h1 {
+        font-family:fantasy;
+        font-size:530%;
+  color: black;
+  text-shadow:
+   -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+     }
+    </style>
+    <style>
+        .JumboHeaderImg{
+        background-image: url("C://Users/HP LAPTOP/Desktop/bg1.jpg");
+        background-size:cover;
+        background-repeat:no-repeat;
+        background-position:center;
+        height:225px;
+        width:100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="jumbotron JumboHeaderImg">
+
+        <h1 ><b>News Aggregator App</b></h1>
+        <a href="/" class="btn btn-dark btn-block" style="float:left;" >Refresh Now </a>
+        </form>
+
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <h3 class="text-centre" style="font-family:fantasy;font-size:250%;color: red;"><U><B>TIMES OF INDIA</B></U></h3>
+
+                    {% for n in toi_obj%}
+                <a href="https://timesofindia.indiatimes.com/briefs/{{n.link}}" target="_blank"> <h5> >>  {{n.title}} </h5></a>
+                    <hr>
+                    {% endfor %}
+                    <br>
+            </div>
+
+            <div class="col-6">
+                <h3 class="text-centre" style="font-family:fantasy;font-size:250%;color: red;"><U><b>THE HITAVADA</b></U></h3>
+
+                    {% for n in h_obj %}
+                <a href="{{n.link}}" target="_blank"><h5> >> {{n.title}} </h5></a>
+                    <hr>
+                    {% endfor %}
+                    <br>
+            </div>
+        </div>
+    </div>
+
+
+    <script
+src="http://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
