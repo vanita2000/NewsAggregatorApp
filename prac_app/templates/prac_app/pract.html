@@ -6,7 +6,7 @@
     <link href="/path/to/buttons.css" rel="stylesheet">
     <style>
         body{
-        background-image:url("C://Users/HP LAPTOP/Desktop/pp1.jpg");
+        background-image:url("C://Users/HP LAPTOP/Desktop/bg2.jpg");
         background-size:cover;
         background-repeat:no-repeat;
         background-position:center;
@@ -22,10 +22,11 @@
     1px -1px 0 #000,
     -1px 1px 0 #000,
      1px 1px 0 #000;
+     }
     </style>
     <style>
         .JumboHeaderImg{
-        background-image: url("C://Users/HP LAPTOP/Desktop/p.jpg");
+        background-image: url("C://Users/HP LAPTOP/Desktop/bg1.jpg");
         background-size:cover;
         background-repeat:no-repeat;
         background-position:center;
@@ -47,7 +48,7 @@
             <div class="col-6">
                 <h3 class="text-centre" style="font-family:fantasy;font-size:250%;color: red;"><U><B>TIMES OF INDIA</B></U></h3>
 
-                    {% for n in toi_news%}
+                    {% for n in toi_obj%}
                 <a href="https://timesofindia.indiatimes.com/briefs/{{n.link}}" target="_blank"> <h5> >>  {{n.title}} </h5></a>
                     <hr>
                     {% endfor %}
@@ -57,13 +58,15 @@
             <div class="col-6">
                 <h3 class="text-centre" style="font-family:fantasy;font-size:250%;color: red;"><U><b>THE HITAVADA</b></U></h3>
 
-                    {% for n in h_news %}
+                    {% for n in h_obj %}
                 <a href="{{n.link}}" target="_blank"><h5> >> {{n.title}} </h5></a>
                     <hr>
                     {% endfor %}
                     <br>
             </div>
         </div>
+    </div>
+
 
     <script
 src="http://code.jquery.com/jquery-3.3.1.min.js"
